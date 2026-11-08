@@ -67,7 +67,7 @@ class NumberFormatPage(defaultPage):
         self.master_frame = master_frame
         lbl_section_title = Label(master_frame, text="formating string to integer: ")
         self.txt_user_input= Entry(master_frame)
-        btn_calculate = Button(master_frame, text="Get Last char index (error)", command=self.calculate)
+        btn_calculate = Button(master_frame, text="convert to integer", command=self.calculate)
 
         lbl_section_title.pack(side=TOP)
         self.txt_user_input.pack(side=LEFT, padx=4)
