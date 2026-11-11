@@ -16,6 +16,7 @@ class MainContainer(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.pack(expand=True)
+        self.config(bg="lightblue")
         
         menubar = tk.Menu(master)
         file = tk.Menu(menubar, tearoff=0)
@@ -26,8 +27,8 @@ class MainContainer(tk.Frame):
 
         master.config(menu = menubar)
 
-        self.text = tk.Text(self, height=20)
-        self.text.pack(side=tk.TOP)
+        self.text = tk.Text(self)
+        self.text.pack(side=tk.TOP, padx=3, pady=3, fill="both")
 
     def save_text(self):
         try:
